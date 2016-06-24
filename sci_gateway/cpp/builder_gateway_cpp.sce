@@ -80,6 +80,8 @@ names = [
 			"opencv_estimateFundamentalMatrix","opencv_estimateFundamentalMatrix";
 			"opencv_estimateUncalibratedRectification","opencv_estimateUncalibratedRectification";
 			"opencv_FFT","opecv_FFT";
+			"opencv_lineToBorderPoints","opencv_lineToBorderPoints";
+			"opencv_HoughLines","opencv_HoughLines";
 		];
 
 files = [
@@ -158,7 +160,9 @@ files = [
 			"opencv_projectPoints.cpp",
 			"opencv_estimateFundamentalMatrix.cpp",
 			"opencv_estimateUncalibratedRectification.cpp",
-			"opencv_FFT.cpp"
+			"opencv_FFT.cpp",
+			"opencv_lineToBorderPoints.cpp",
+			"opencv_HoughLines.cpp"
 		];
 
 function builder_gw_cpp()
