@@ -7,14 +7,15 @@ function [out] = cvMedian(image,varargin)
 // Finds median values in an input
 //
 // Calling Sequence
-// val = cvMedian(image)
-// val = cvMedian(image, name, value, .....)
+// val = cvMedian(image);
+// val = cvMedian(image, name, value, .....);
 //
 // Parameters
 // image : Input image matrix 
 // SortMethod (Optional) : The sort method to calculate the median - Quick sort or Insertion Sort. Default : Quick sort
 // Dimension (Optional) : Dimension along which the function operates - Row, Column, All or Custom. Default : All
 // CustomDimension (Optional) : The integer dimension over which the function calculates the median. This value cannot exceed the number of dimensions in input. It applies only when 'Dimension' property is set to 'Custom'. Default : 1
+// val : It contains the median values.
 //
 // Description 
 // The function calculates the median values in a given input image matrix. 
@@ -28,7 +29,7 @@ function [out] = cvMedian(image,varargin)
 // Authors
 // Asmita Bhar
 //
-
+	image = mattolist(image);
 	[lhs,rhs] = argn(0);
 	if rhs<1 then
 		error(msprintf("Not enough input arguments"));
