@@ -3,7 +3,6 @@
 //**************************************************
 
 function [out] = cvMedian(image,varargin)
-
 // Finds median values in an input
 //
 // Calling Sequence
