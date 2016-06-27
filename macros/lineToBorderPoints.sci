@@ -1,5 +1,4 @@
 function [points] = lineToBorderPoints(lines,isize)
-
 // Points of intersection of line(s) with the image border
 //
 // Calling Sequence 
